@@ -1,4 +1,14 @@
-## Hi there 👋
+<h3 align="center">👋 Hello! I'm Jay Hsia.</h3>
+
+<section>
+<br>
+<br>
+### About me ☕
+- Studies Computer Programming & Analysis at [Seneca Polytechnic](https://www.senecapolytechnic.ca/)
+- Software engineer specializing in back-end development
+- Capable of handling basic front-end tasks
+- Previously worked at Trend Micro as a Software Application Engineer, primarily responsible for backend architecture design and development
+</section>
 
 <!--
 **jayhsia1997/jayhsia1997** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
