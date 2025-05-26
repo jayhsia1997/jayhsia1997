@@ -1,0 +1,31 @@
+{
+  "base": {
+    "title": "Jay Hsia",
+    "description": "A personal website to show about me and my work."
+  },
+  "nav": {
+    "header": {
+      "home": "Home",
+      "about": "About"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to My Personal Website",
+      "subtitle": "Hi, I'm Jay, a software engineer. I love building things that make a difference."
+    }
+  },
+  "footer": {
+    "tagline": "Jay's Personal Website",
+    "copyright": "© {{year}} Jay's Portfolio. All rights reserved."
+  },
+  "settings": {
+    "theme": {
+      "title": "Themes",
+      "light": "Light",
+      "dark": "Dark",
+      "auto": "Sync with System",
+      "current": "Current theme: {{theme}}"
+    }
+  }
+}

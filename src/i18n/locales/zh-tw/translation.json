@@ -1,0 +1,30 @@
+{
+  "base": {
+    "title": "Jay Hsia",
+    "description": "A personal website to show about me and my work."
+  },
+  "nav": {
+    "header": {
+      "home": "首頁",
+      "about": "關於我"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "歡迎來到我的個人網站",
+      "subtitle": "嗨，我是 Jay，一名軟體工程師。我喜歡創建能夠帶來改變的事物。"
+    }
+  },
+  "footer": {
+    "tagline": "Jay's Personal Website",
+    "copyright": "© {{year}} Jay's Portfolio. All rights reserved."
+  },
+  "settings": {
+    "theme": {
+      "light": "淺色",
+      "dark": "深色",
+      "auto": "跟隨系統",
+      "current": "當前主題：{{theme}}"
+    }
+  }
+}
