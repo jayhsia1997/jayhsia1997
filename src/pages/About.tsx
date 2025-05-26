@@ -9,7 +9,7 @@ const About: React.FC = () => {
         <h1 className="text-3xl font-bold">
           {t('header.name')}
         </h1>
-        <p className="text-sm">
+        <p className="text-xl">
           {t('header.title')}
         </p>
         <p className="text-sm">
@@ -39,11 +39,11 @@ const About: React.FC = () => {
           {t('skills.title')}
         </h2>
         <ul className="list-disc list-inside text-sm space-y-1 mt-2">
-          <li><strong>{t('skills.items.backend')}</strong> {t('skills.itemList.backend')}</li>
-          <li><strong>{t('skills.items.devops')}</strong> {t('skills.itemList.devops')}</li>
-          <li><strong>{t('skills.items.frontend')}</strong> {t('skills.itemList.frontend')}</li>
-          <li><strong>{t('skills.items.database')}</strong> {t('skills.itemList.database')}</li>
-          <li><strong>{t('skills.items.other')}</strong> {t('skills.itemList.other')}</li>
+          <li><strong>{t('skills.items.backend')}</strong> {t('skills.itemsList.backend')}</li>
+          <li><strong>{t('skills.items.devops')}</strong> {t('skills.itemsList.devops')}</li>
+          <li><strong>{t('skills.items.frontend')}</strong> {t('skills.itemsList.frontend')}</li>
+          <li><strong>{t('skills.items.databases')}</strong> {t('skills.itemsList.databases')}</li>
+          <li><strong>{t('skills.items.other')}</strong> {t('skills.itemsList.other')}</li>
         </ul>
       </section>
 

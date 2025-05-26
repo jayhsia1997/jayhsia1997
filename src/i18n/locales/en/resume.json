@@ -18,7 +18,7 @@
   },
   "skills": {
     "title": "Professional Skills",
-    "item": {
+    "items": {
       "backend": "Backend:",
       "devops": "Cloud & DevOps:",
       "databases": "Databases & Storage:",
