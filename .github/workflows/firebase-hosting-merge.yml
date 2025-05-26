@@ -9,6 +9,9 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: website
+      url: "https://jayhsia.com"
     steps:
       - uses: actions/checkout@v4
       - run: |
