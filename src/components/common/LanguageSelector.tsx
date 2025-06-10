@@ -49,7 +49,7 @@ const LanguageSelector: React.FC = () => {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-3 py-1.5 rounded-md text-gray-700 dark:text-gray-200 hover:bg-amber-500 hover:text-white dark:hover:bg-amber-600 transition-colors"
+        className="flex items-center space-x-2 px-3 py-1.5 rounded-md text-gray-700 dark:text-gray-200 hover:bg-tertiary-500 hover:text-white dark:hover:bg-tertiary-600 transition-colors"
       >
         <span>{currentLanguage.flag}</span>
         <span>{currentLanguage.name}</span>
@@ -59,14 +59,14 @@ const LanguageSelector: React.FC = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-stone-100 dark:bg-stone-800 border border-stone-300">
+        <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-primary-100 dark:bg-primary-800 border border-primary-300">
           <div className="py-1" role="menu" aria-orientation="vertical">
             {languages.map((language) => (
               <button
                 key={language.code}
                 onClick={() => handleLanguageChange(language.code)}
-                className={`flex items-center space-x-2 w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-amber-500 hover:text-white dark:hover:bg-amber-600 ${
-                  i18n.language === language.code ? "bg-stone-200 dark:bg-stone-700" : ""
+                className={`flex items-center space-x-2 w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-tertiary-500 hover:text-white dark:hover:bg-tertiary-600 ${
+                  i18n.language === language.code ? "bg-primary-200 dark:bg-primary-700" : ""
                 }`}
                 role="menuitem"
               >

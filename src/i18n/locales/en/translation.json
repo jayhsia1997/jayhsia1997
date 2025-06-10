@@ -41,13 +41,7 @@
     "tagline": "Jay's Personal Website",
     "copyright": "© {{year}} Jay's Website. All rights reserved."
   },
-  "settings": {
-    "theme": {
-      "title": "Themes",
-      "light": "Light",
-      "dark": "Dark",
-      "auto": "Sync with System",
-      "current": "Current theme: {{theme}}"
-    }
+  "notification": {
+    "copySuccess": "{{text}} copied to clipboard!"
   }
 }

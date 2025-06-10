@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Skills: React.FC = () => {
   const { t } = useTranslation("translation", { keyPrefix: "home.skills" });
   return (
-    <div className="w-full py-24 bg-stone-100 dark:bg-stone-700 text-stone-800 dark:text-stone-200">
+    <div className="w-full py-24 bg-primary-100 dark:bg-primary-700 text-primary-800 dark:text-primary-200">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-4 gap-4 items-center">
         {SkillCardItems.map((skill: SkillCardItem) => (
           <Card
