@@ -8,21 +8,12 @@ interface DropdownProps {
   className?: string;
 }
 
-export const Dropdown: React.FC<DropdownProps> = ({
-  isOpen,
-  onClose,
-  children,
-  className = "",
-}) => {
+export const Dropdown: React.FC<DropdownProps> = ({ isOpen, onClose, children, className = "" }) => {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node) &&
-        !(event.target as HTMLElement).closest(".dropdown-toggle")
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node) && !(event.target as HTMLElement).closest(".dropdown-toggle")) {
         onClose();
       }
     };
@@ -38,7 +29,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
   return (
     <div
       ref={dropdownRef}
-      className={`absolute z-40  right-0 mt-2  rounded-xl border border-gray-200 bg-white  shadow-theme-lg dark:border-gray-800 dark:bg-gray-dark ${className}`}
+      className={`absolute z-40  right-0 mt-2  rounded-xl border border-stone-200 bg-white  shadow-theme-lg dark:border-stone-800 dark:bg-stone-900 ${className}`}
     >
       {children}
     </div>

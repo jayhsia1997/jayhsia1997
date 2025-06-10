@@ -10,7 +10,7 @@
 
 ### Connect with me 📬
 [![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/jayhsia1997)
-[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/jay-hsia-profile/)
+[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/jayhsia1997/)
 [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:jayhsia1997@gmail.com)
 [<img src="https://img.shields.io/github/followers/jayhsia1997?label=follow&style=social" height="22" title="Follow me" />](https://github.com/jayhsia1997)
 

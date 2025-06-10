@@ -5,9 +5,9 @@ import AppHeader from "./AppHeader.tsx";
 
 const LayoutContent: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-stone-100 text-gray-700">
       <AppHeader />
-      <main className="flex-grow">
+      <main>
         <Outlet />
       </main>
       <Footer />

@@ -11,13 +11,35 @@
   },
   "home": {
     "hero": {
+      "greeting": "Hi, I'm Jay",
+      "position": "Software Engineer",
+      "slogan": "I love building things that make a difference.",
       "title": "Welcome to My Personal Website",
       "subtitle": "Hi, I'm Jay, a software engineer. I love building things that make a difference."
+    },
+    "skills": {
+      "descriptions": {
+        "python": "Proficient in using Python for backend development and scripting.",
+        "fastapi": "Proficient in building APIs with FastAPI.",
+        "django": "Skilled in web development using Django framework.",
+        "postgreSQL": "Experienced in database management with PostgreSQL.",
+        "redis": "Experienced in using Redis for caching and data storage.",
+        "messageQueues": "Familiar with message queue systems like RabbitMQ and Kafka.",
+        "react": "Experienced in building user interfaces with React.",
+        "js": "Proficient in JavaScript, including ES6+ features.",
+        "ts": "Strong understanding of TypeScript for type-safe development.",
+        "nodejs": "Skilled in server-side development with Node.js.",
+        "TailwindCSS": "Proficient in using Tailwind CSS for styling.",
+        "docker": "Experienced in containerization with Docker.",
+        "AWS": "Familiar with AWS services for cloud computing.",
+        "Firebase": "Familiar with Firebase for backend services and real-time databases.",
+        "CICD": "Experienced in automating workflows with GitHub Actions."
+      }
     }
   },
   "footer": {
     "tagline": "Jay's Personal Website",
-    "copyright": "© {{year}} Jay's Portfolio. All rights reserved."
+    "copyright": "© {{year}} Jay's Website. All rights reserved."
   },
   "settings": {
     "theme": {

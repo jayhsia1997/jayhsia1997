@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "jayhsia-personal-website",
     "public": "dist",
     "ignore": [
       "firebase.json",
