@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const About: React.FC = () => {
+const Resume: React.FC = () => {
   const { t } = useTranslation("resume");
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6 text-gray-800">
@@ -108,4 +108,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default Resume;

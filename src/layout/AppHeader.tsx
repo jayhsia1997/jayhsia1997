@@ -20,8 +20,8 @@ const AppHeader: React.FC = () => {
             <Link to="/" className="text-gray-700 dark:text-gray-200 hover:text-tertiary-500 dark:hover:text-tertiary-300">
               {t("nav.header.home")}
             </Link>
-            <Link to="/about" className="text-gray-700 dark:text-gray-200 hover:text-tertiary-500 dark:hover:text-tertiary-300">
-              {t("nav.header.about")}
+            <Link to="/resume" className="text-gray-700 dark:text-gray-200 hover:text-tertiary-500 dark:hover:text-tertiary-300">
+              {t("nav.header.resume")}
             </Link>
             <LanguageSelector/>
             <ThemeToggleButton/>

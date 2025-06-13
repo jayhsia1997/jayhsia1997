@@ -5,12 +5,11 @@ import { useTranslation } from "react-i18next";
 interface Language {
   code: string;
   name: string;
-  flag: string;
 }
 
 const languages: Language[] = [
-  { code: "en", name: "English", flag: "🇺🇸" },
-  { code: "zh-tw", name: "繁體中文", flag: "🇹🇼" },
+  { code: "en", name: "English" },
+  { code: "zh-tw", name: "繁體中文" },
 ];
 
 const fetchLanguage: (i18n: i18n) => Language = (i18n) => {
@@ -49,9 +48,8 @@ const LanguageSelector: React.FC = () => {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-3 py-1.5 rounded-md text-gray-700 dark:text-gray-200 hover:bg-tertiary-500 hover:text-white dark:hover:bg-tertiary-600 transition-colors"
+        className="flex items-center space-x-2 px-3 py-1.5 rounded-md bg-white text-gray-700 hover:bg-primary-100 hover:text-primary-900 dark:border-secondary-600 dark:bg-secondary-600 dark:text-gray-200 dark:hover:bg-tertiary-600 transition-colors"
       >
-        <span>{currentLanguage.flag}</span>
         <span>{currentLanguage.name}</span>
         <svg className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -70,7 +68,6 @@ const LanguageSelector: React.FC = () => {
                 }`}
                 role="menuitem"
               >
-                <span>{language.flag}</span>
                 <span>{language.name}</span>
               </button>
             ))}
