@@ -4,8 +4,36 @@ import { DiRedis } from "react-icons/di";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaAws, FaDocker, FaPython, FaReact } from "react-icons/fa6";
 import { LuMessagesSquare } from "react-icons/lu";
-import { MdMail, MdPhone } from "react-icons/md";
+import { MdMail, MdOutlineOpenInNew, MdPhone } from "react-icons/md";
 import { SiDjango, SiFastapi, SiGithubactions, SiPostgresql } from "react-icons/si";
+
+interface HeaderItem {
+  title: string;
+  translationKey: string;
+  href: string;
+  target?: string;
+  icon?: ReactNode;
+}
+
+const HeaderItems: HeaderItem[] = [
+  {
+    title: "Home",
+    translationKey: "nav.header.home",
+    href: "/",
+  },
+  {
+    title: "Resume",
+    translationKey: "nav.header.resume",
+    href: "/resume",
+  },
+  {
+    title: "Blog",
+    translationKey: "nav.header.blog",
+    href: "https://notes.jayhsia.com",
+    target: "_blank",
+    icon: <MdOutlineOpenInNew/>
+  }
+];
 
 enum ItemType {
   Link = "link",
@@ -135,5 +163,14 @@ const SkillCardItems: SkillCardItem[] = [
   },
 ];
 
-export { HeroSocialItems, ItemType, SkillCardItems };
-export type { HeroSocialItem, SkillCardItem };
+export {
+  HeaderItems,
+  HeroSocialItems,
+  ItemType,
+  SkillCardItems
+};
+export type {
+  HeaderItem,
+  HeroSocialItem,
+  SkillCardItem
+};

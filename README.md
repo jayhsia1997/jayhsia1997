@@ -1,7 +1,8 @@
 ## 👋 Hi there! I'm Jay Hsia
 
 ### Skills
-[![My Skills](https://skillicons.dev/icons?i=py,fastapi,aws,postgres,redis,react,js,html,css)](https://skillicons.dev)
+
+[![My Skills](https://skillicons.dev/icons?i=py,fastapi,aws,postgres,redis,react,js,html,css,docker)](https://skillicons.dev)
 
 ### About me
 - 🌱 I’m currently studing Computer Programming & Analysis at [Seneca Polytechnic](https://www.senecapolytechnic.ca/)

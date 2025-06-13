@@ -6,7 +6,8 @@
   "nav": {
     "header": {
       "home": "Home",
-      "resume": "Resume"
+      "resume": "Resume",
+      "blog": "Blog"
     }
   },
   "home": {
