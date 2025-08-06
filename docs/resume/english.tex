@@ -1,0 +1,185 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{helvet}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{ifthen}
+\usepackage{setspace}
+\linespread{0.9}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage[colorlinks=true, urlcolor=primaryColor]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[margin=0.5in, includefoot]{geometry}
+\usepackage{fontspec}
+\setmainfont{Arial}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{6pt}
+
+% Resume Title Format
+\titleformat{\section}{
+  \vspace{-8pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Resume Href
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{
+  \hrefWithoutArrow{#1}{
+    \ifthenelse{\equal{#2}{}}{ }{#2\ }
+    \raisebox{.15ex}{\footnotesize \faExternalLink*}
+  }
+}
+
+% Resume Item
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{0pt}}
+  }
+}
+
+% Resume Item No Horizontal Padding
+\newcommand{\resumeItemNH}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+% Resume Subheading
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small#4 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+% Resume Project Heading
+\newcommand{\resumeProjectHeading}[3]{
+  \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \small• #2 & #3 \\
+    \end{tabular*}\vspace{0pt}
+}
+
+% Resume SubItem
+\newcommand{\resumeSubItem}[2]{
+  \vspace{-16pt}\item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\small#1}: \small#2 \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+% Resume Project Technologies Item
+\newcommand{\resumeProjectTechnologiesItem}[1]{
+  \vspace{-16pt}\item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\small Technologies}: \small#1 \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt,label={}]}
+\renewcommand{\labelitemii}{\raisebox{0.2ex}{\footnotesize \textbullet}}
+\newcommand{\resumeSubHeadingListStartBullets}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+% Header
+\begin{center}
+{\LARGE \textbf{Pin-Chieh(Jay) Hsia}}\\[0.25em]
+{Software Engineer}\\[0.1em]
+\small Toronto, ON | +1 (416) 564-1450 |
+\hrefWithoutArrow{mailto:jayhsia1997@gmail.com}{jayhsia1997@gmail.com} |
+\hrefWithoutArrow{https://www.linkedin.com/in/jayhsia1997/}{linkedin.com/in/jayhsia1997} |
+\hrefWithoutArrow{https://github.com/jayhsia1997}{github.com/jayhsia1997}
+\\[0.4em]
+\end{center}
+
+% ---- Summary ----
+% \section{Summary}
+% Software engineer with over 4 years of specialization in back-end development and proficiency in basic front-end tasks. Recent experience includes role as software application engineer at Trend Micro, focusing on the design and development of back-end architecture. Currently pursuing studies in computer programming in Canada.
+
+% Professional Skills
+\section*{Professional Skills}
+  \resumeItemListStart
+    % Backend
+    \resumeItemNH{\textbf{Backend:} Python, FastAPI, Django, RESTful APIs, Cache Systems, Message Queues}
+    % Cloud \& DevOps
+    \resumeItemNH{\textbf{Cloud \& DevOps:} AWS, Azure, Docker, CI/CD (GitHub Actions), Linux, Firebase}
+    % Databases \& Storage
+    \resumeItemNH{\textbf{Databases \& Storage:} PostgreSQL, Redis, NoSQL, AWS S3, Firebase Storage}
+    % Frontend
+    \resumeItemNH{\textbf{Frontend:} JavaScript, TypeScript, React.js, HTML, CSS, Tailwind}
+    % Other
+    \resumeItemNH{\textbf{Other:} System Design, Unit Test, C++, Git, Scrum, Jira, Design Patterns, Open Telemetry, Cross-team Collaboration}
+  \resumeItemListEnd
+
+% Work Experience
+\section*{Work Experience}
+  \resumeSubHeadingListStart
+    % Trend Micro
+    \resumeSubheading
+      {Software Application Engineer}{Taipei City, Taiwan}
+      {Trend Micro}{Sep 2021 -- Feb 2024}
+      \resumeItemListStart
+        \resumeItemNH{Developed a script for the development team using the pre-commit tool to unify code style and prevent committing sensitive information.}
+        \resumeItemNH{Enhanced the Game feature within the Microsoft Teams application through strategic refactoring, optimizing data storage methodologies to nearly double system performance and reduce errors by approximately 90\%.}
+        \resumeItemNH{Researched and designed backend architecture for a new internal ticketing system, integrating a Message Queue System to improve workflow flexibility.}
+        \resumeItemNH{Created a scheduled task script to store internal company documents as vectors in Azure AI Search, enabling AI chatbot development for knowledge retrieval.}
+        \resumeItemNH{Collaborated with HR to design and implement a game-based onboarding application on Microsoft Teams, facilitating efficient knowledge acquisition for new employees.}
+      \resumeItemListEnd
+    % Taiwan Good Fortune Cloud Co., Ltd.
+    \resumeSubheading
+      {Python Developer}{Taichung City, Taiwan}
+      {Taiwan Good Fortune Cloud Co., Ltd.}{Apr 2020 -- Sep 2021}
+      \resumeItemListStart
+        \resumeItemNH{Developed and maintained the internal operations and maintenance system, planning, documenting, and building RESTful APIs.}
+        \resumeItemNH{Implemented front-end and back-end features, including asynchronous web scraping scripts.}
+        \resumeItemNH{Led the restructuring of the system architecture for operations management, reducing server load by over 50\%.}
+        \resumeItemNH{Contributed to the implementation of the company's internal ticketing system.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Education
+\section*{Education}
+  \resumeSubHeadingListStart
+    % Seneca Polytechnic
+    \resumeSubheading
+      {Seneca Polytechnic}{Toronto, ON}
+      {Advanced Diploma in \textbf{Computer Programming \& Analysis}}{Jan 2025 -- Sep 2027}
+    % Lunghwa University of Science and Technology
+    \resumeSubheading
+      {Lunghwa University of Science and Technology}{Taoyuan City, Taiwan}
+      {B.S. in \textbf{Electrical Engineering}}{Sep 2015 -- Jun 2019}
+  \resumeSubHeadingListEnd
+
+% Projects
+\section*{Projects}
+  \resumeSubHeadingListStart
+    % The Hope Conference App
+    \resumeProjectHeading{The Hope Conference App}{Backend Development}{Aug 2024 -- Present}
+      \resumeProjectTechnologiesItem{Python, FastAPI, Django, PostgreSQL, Redis, AWS RDS, AWS S3, Docker, CI/CD, Firebase, Render}
+      \resumeItemListStart
+        \resumeItemNH{Developed a backend system for a Conference APP using FastAPI, integrating Firebase Authentication for user login, and designed APIs for frontend usage.}
+        \resumeItemNH{Build a simple Wagtail CMS based on Django to allow administrators to edit the data displayed on the APP.}
+      \resumeItemListEnd
+    % Personal Website
+    \resumeProjectHeading{Personal Website}{Frontend Development}{May 2025 -- Present}
+      \resumeProjectTechnologiesItem{React.js, TypeScript, Tailwind, Vite, Firebase}
+      \resumeItemListStart
+        \resumeItemNH{Developed a personal website using React.js and TypeScript, and deployed it on Firebase Hosting.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\end{document}

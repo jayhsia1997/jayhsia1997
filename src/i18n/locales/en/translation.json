@@ -44,5 +44,8 @@
   },
   "notification": {
     "copySuccess": "{{text}} copied to clipboard!"
+  },
+  "resume": {
+    "path": "Jay Hsia's Resume(en).pdf#zoom=110"
   }
 }
