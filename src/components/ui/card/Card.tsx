@@ -34,7 +34,7 @@ const CardIcon: React.FC<CardIconProps> = ({ icon }) => {
  * @constructor
  */
 const CardTitle: React.FC<CardTitleProps> = ({ children }) => {
-  return <h4 className="mb-1 font-medium text-gray-800 text-theme-xl dark:text-white/90">{children}</h4>;
+  return <h4 className="mb-2 font-medium text-gray-800 text-theme-xl dark:text-white/90">{children}</h4>;
 };
 
 /**
@@ -58,7 +58,7 @@ const Card: React.FC<CardProps> = ({ icon, title, className, children }) => {
   return (
     <div className={`rounded-xl border border-primary-300 bg-primary-50 p-5 dark:border-primary-700 dark:bg-primary-800 sm:p-6 ${className || ""}`}>
       <div>
-        {icon && <CardIcon icon={icon}/>}
+        {icon && <CardIcon icon={icon} />}
         <CardTitle>{title}</CardTitle>
         <CardDescription>{children}</CardDescription>
       </div>

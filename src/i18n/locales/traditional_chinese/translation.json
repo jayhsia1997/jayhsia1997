@@ -6,25 +6,77 @@
   "nav": {
     "header": {
       "home": "首頁",
-      "about": "關於我"
+      "resume": "履歷",
+      "projects": "專案"
     }
   },
   "home": {
     "hero": {
+      "greeting": "嗨，我是 Jay",
+      "position": "軟體工程師",
+      "slogan": "我喜歡創建能夠帶來改變的事物。",
       "title": "歡迎來到我的個人網站",
       "subtitle": "嗨，我是 Jay，一名軟體工程師。我喜歡創建能夠帶來改變的事物。"
+    },
+    "skills": {
+      "descriptions": {
+        "python": "精通使用 Python 進行後端開發和腳本編寫。",
+        "fastapi": "精通使用 FastAPI 構建 API。",
+        "django": "熟練使用 Django 框架進行網頁開發。",
+        "postgreSQL": "熟練使用 PostgreSQL 進行資料庫管理。",
+        "redis": "熟練使用 Redis 進行快取和資料儲存。",
+        "messageQueues": "熟悉使用 RabbitMQ 和 Kafka 等消息佇列系統。",
+        "react": "熟練使用 React 構建使用者介面。",
+        "js": "精通 JavaScript，包括 ES6+ 特性。",
+        "ts": "深入理解 TypeScript 的型別安全開發。",
+        "nodejs": "熟練使用 Node.js 進行伺服器端開發。",
+        "TailwindCSS": "精通使用 Tailwind CSS 進行樣式設計。",
+        "docker": "熟練使用 Docker 進行容器化。",
+        "AWS": "熟悉 AWS 服務的雲端計算。",
+        "Firebase": "熟悉使用 Firebase 進行後端服務和即時資料庫。",
+        "CICD": "熟練使用 GitHub Actions 進行工作流程自動化。",
+        "vite": "熟悉使用 Vite 建置網站。",
+        "linux": "熟悉使用 Linux 進行系統管理和小型伺服器開發。",
+        "git": "熟悉使用 Git 進行版本控制。",
+        "github": "熟悉使用 GitHub 進行專案管理和合作。",
+        "azure": "熟悉使用 Azure。"
+      }
+    },
+    "projects": {
+      "title": "專案",
+      "detail": "詳細內容",
+      "summaries": {
+        "personalWebsite": "本網站使用 React、TypeScript、Vite 與 Tailwind CSS 建置，透過 GitHub Pages 部署。",
+        "theHopeConferenceApp": "TheHope Conference APP 後端，提供登入、會議、時程與 Workshop 功能。採用 FastAPI、PostgreSQL、Redis、AWS S3、Docker 與 Firebase。",
+        "theHopeConferenceAdminPortal": "TheHope Conference Admin Portal，用於管理內容、使用者與營運。後端 FastAPI，前端 React + TypeScript，整合 PostgreSQL、Redis、AWS S3、CI/CD 與 Firebase。"
+      }
+    },
+    "about": {
+      "title": "關於我",
+      "description": "我是Jay，一位軟體工程師，擁有豐富的 Python、FastAPI 和 Django 開發經驗。曾在 Trend Micro 擔任 Software Application Engineer，負責內部IS部門相關系統的開發與維護，以及後端架構設計與開發。在台灣宸運雲端有限公司擔任 Python 開發人員，參與前後端開發任務，並負責異步網頁爬蟲腳本的創建。我熱愛學習，樂於接受挑戰，並具備良好的溝通能力和團隊合作精神。因本人目前在外進修，希望找到 Backend Engineer 或 Software Engineer 相關兼職或約聘的遠端工作，可以負責軟體開發與維護，參與系統架構設計與優化，以及系統開發與整合。"
     }
   },
-  "footer": {
-    "tagline": "Jay's Personal Website",
-    "copyright": "© {{year}} Jay's Portfolio. All rights reserved."
-  },
-  "settings": {
-    "theme": {
-      "light": "淺色",
-      "dark": "深色",
-      "auto": "跟隨系統",
-      "current": "當前主題：{{theme}}"
+  "projects": {
+    "title": "Projects",
+    "items": {
+      "personalWebsite": {
+        "title": "Personal Website",
+        "content": "**使用 React、TypeScript 與現代前端工具打造個人網站**\n\n建立個人網站不僅是組合幾個靜態頁面——更是建構一個快速、可擴展且具動態體驗的作品，展現技術實力與設計美感。在這個專案中，我使用 **React** 與 **TypeScript** 建立個人網站，並採用 **Vite 6** 以其優異的建構效能與出色的開發體驗。搭配 **Tailwind CSS**，網站設計呈現出乾淨、響應式的版面配置，並支援深色模式以提升無障礙性與視覺舒適度。\n\n### 前端架構與設計\n\n網站的基礎由 **React** 與 **TypeScript** 所構成，確保良好的型別安全性與模組化結構。Vite 的極高速熱模組取代（HMR）與優化打包流程，大幅提高開發過程中的迭代速度。樣式由 **Tailwind CSS** 處理，透過實用導向（utility-first）類別簡化統一 UI 的構建，同時利用 **tailwind-merge** 與 **PostCSS** 來簡化類別管理，並確保各元件之間的設計一致性。\n\n### 路由與國際化\n\n導覽由 **React Router** 負責，提供順暢的單頁應用（SPA）使用體驗。鑑於無障礙與在地化的重要性，網站整合了 **i18next** 與 **react-i18next**，支援英文與中文的動態語言切換。並透過瀏覽器語言偵測功能，自動根據使用者偏好語言顯示內容，提升全球使用者的便利性。\n\n### 內容渲染與互動性\n\n動態內容區域使用 **react-markdown** 來渲染以 Markdown 編寫的內容，支援表格、清單及其他豐富文字元素，使內容的更新能在不修改核心程式碼的情況下進行。此外，自訂的 **React Hooks** 負責管理互動元件的狀態，例如圖片輪播，提供流暢且吸引人的瀏覽體驗。UI 元件則以 **react-icons** 強化，確保整體視覺的一致性。\n\n### 部署與主機託管\n\n最終專案部署於 **Firebase Hosting**，提供快速的全球內容傳遞、簡潔的版本管理，以及無縫的 CI/CD 整合。此部署流程讓更新更迅速，確保新功能與改進能即時呈現給使用者。\n\n### 核心技術\n\n- **React** + **TypeScript**：可擴展且易維護的程式架構\n- **Vite 6**：快速開發與優化打包流程\n- **Tailwind CSS**（含深色模式支援）：打造現代化響應式設計\n- **React Router**：高效的前端路由\n- **i18next / react-i18next**：多語系支援與在地化\n- **react-markdown**、**react-icons**、**PostCSS**、**tailwind-merge**：內容與 UI 強化\n- **Firebase Hosting**：穩定可靠的部署與分發\n\n此專案展現了如何將現代前端工具無縫整合，打造一個高效、美觀且面向全球使用者的個人網站，兼具技術精準度與出色的使用者體驗。"
+      },
+      "theHopeConferenceApp": {
+        "title": "TheHope Conference APP",
+        "content": "### TheHope Conference APP - 後端開發\n\n在構建 **TheHope Conference APP** 的過程中，我們的工程團隊高度重視系統的可擴展性、效能與可維護性。在團隊中，我主要負責後端系統的設計與開發。**Conference Portal API（conf-portal-api）** 是整個系統的核心骨幹，設計為一個由 **FastAPI** 與 **Python 3.13** 驅動的現代 RESTful 服務。透過 **非同步架構** 的應用，系統能確保高吞吐量與高回應性——這對於一個服務全球用戶的動態會議平台而言至關重要。\n\n---\n\n### API 專案概覽（conf-portal-api）\n\nTheHope Conference Portal API 致力於打造快速、穩定且安全的後端服務。以下為其主要組成與使用技術的細分介紹。\n\n### 後端框架與執行環境\n- **FastAPI** 提供非同步且高效能的網頁框架，能自動生成 OpenAPI 文件，實現快速開發與清晰的 API 規範。\n- **Gunicorn + Uvicorn** 作為 ASGI 架構的運行堆疊，確保請求處理的穩定性與可擴展性。\n- **Poetry** 用於依賴管理，確保開發與部署環境的一致性與可重現性。\n\n### 資料庫與快取\n\n為了支援穩定且高效的資料層：\n- **PostgreSQL** 作為主要資料庫，搭配 **SQLAlchemy ORM** 與 **asyncpg** 以實現非同步查詢。\n- **Redis** 作為快取層，同時提供速率限制與 Token 黑名單功能——提升效能與安全性。\n- **Alembic** 管理資料庫遷移，確保架構演進的安全與版本控制。\n\n### 驗證與授權機制\n\n在處理使用者與管理端互動時，安全性始終是核心考量：\n- **Firebase Admin SDK** 負責一般使用者的身份驗證，支援現代身份提供者的無縫整合。\n- **JWT（PyJWT）** 處理管理員的身份驗證與 Token 生命週期管理。\n- **RBAC（基於角色的存取控制）** 透過動作（verb）、資源、權限與角色實現細緻的存取治理，確保各服務間的一致性管理。\n\n### 系統架構與可觀測性\n\n系統設計強調模組化、可測試性與可觀測性：\n- **Dependency Injection（dependency-injector）** 以乾淨且可擴展的模式構建服務組合。\n- **Pydantic** 用於資料模型驗證與序列化，提升資料傳輸的可靠性與設定管理的穩定性。\n- **OpenTelemetry** 結合 **Sentry** 實現分散式追蹤與效能監控，提供服務健康狀態的深入洞察與問題診斷能力。\n\n### 支援功能\n\n為補足 API 的核心能力：\n- **AWS S3（boto3）** 提供可擴展的會議資產檔案儲存。\n- **SMTP（aiosmtplib）** 支援非同步郵件發送，並透過 **Jinja2** 模板引擎生成專業且動態的郵件內容。\n- **基於 Redis 的速率限制** 機制防止濫用，確保公平使用。\n- **CORS** 設定確保 Web 與行動應用可安心進行跨來源通訊。\n\n### 開發工具與測試\n\n品質保證與開發效率透過強大的工具組合實現：\n- **pytest**、**pytest-asyncio** 與 **pytest-mock** 支援完整且非同步的測試套件。\n- **Click** 提供乾淨的命令列介面，用於運維任務與自動化操作。\n\n---\n\nTheHope Conference Portal API 以其非同步設計、模組化架構與雲端原生整合體現了現代後端工程的最佳實踐。從身份驗證與可觀測性，到對 DevOps 友善的工具鏈，每個要素都旨在為無縫的會議體驗奠定穩固的基礎。此基礎架構不僅能滿足現有需求，更為 TheHope 數位生態系的未來擴展與成長提供強大支持。"
+      },
+      "theHopeConferenceAdminPortal": {
+        "title": "TheHope Conference Admin Portal",
+        "content": "### TheHope Conference 管理後台入口網站 - 前端專案概述\n\nTheHope Conference 管理後台入口網站是一個現代化且高效的前端應用程式，旨在協助管理員全面掌控會議系統的各個面向。此單頁式應用（SPA）以 **React 19** 與 **TypeScript 5.7** 打造，採用先進的前端技術棧，兼具高可維護性與優異的開發體驗。\n\n---\n\n## 核心框架\n\n本專案的基礎為 **React 19.0.0**，採用最新的函式型元件設計與 Hooks API。結合 **TypeScript 5.7.2**，可提供強大的型別安全性與更完善的開發者工具支援。**Vite 6.1.0** 則作為建置系統與開發伺服器，提供極快的建置速度與熱模組替換（HMR）功能。\n\n---\n\n## 路由與狀態管理\n\n入口網站使用 **React Router 7.1.5** 來處理路由，支援動態路由生成與基於角色的存取控制（RBAC）。全域狀態（如身份驗證、選單配置、主題、側邊欄顯示）則透過 **React Context API** 管理，分別以模組化的 `AuthContext`、`MenuContext`、`ThemeContext` 與 `SidebarContext` 實現。\n\n---\n\n## 使用者介面與樣式\n\n一個現代化的管理後台必須兼顧可用性與美觀。TheHope 管理後台運用 **Tailwind CSS 4.0.0**，採取以實用為核心的原子化樣式設計，確保設計一致性與靈活性。圖示方面使用 **React Icons**，以 Material Design (md) 系列為主。此外，團隊亦建立了 **自訂 UI 元件庫**，提升系統中元件的重用性與可擴充性。\n\n---\n\n## 資料與 API 架構\n\n專案整合 **Axios 1.11.0** 作為 HTTP 用戶端，具備請求與回應攔截器，以強化錯誤處理與權杖（token）管理。前端無縫整合 **Firebase** 身份驗證，並在 `api/services/` 目錄下組織 API 服務層，將網路邏輯與 UI 元件明確分離。此結構提升可維護性並確保關注點分離。\n\n---\n\n## 功能性元件\n\n入口網站的功能深度透過多種專用元件與整合進一步強化：\n\n- **React Dropzone** 用於檔案上傳\n- **React Helmet Async** 管理頁面標題與中繼資料\n- **SimpleBar React** 提供自訂卷軸設計\n- **Moment.js + Moment Timezone** 精準管理時間與時區\n\n---\n\n## 開發者體驗\n\n從開發者角度出發，本專案著重於高度友善的開發環境。特色包括 **嚴格的 TypeScript 模式**、**路徑別名**（`@` 對應至 `src` 目錄）、透過 `vite-plugin-svgr` 提供 **SVG 支援**，並具備多環境設定（開發、測試、正式）等，皆有助於提升開發效率與部署一致性。\n\n---\n\n## 架構亮點\n\nTheHope 管理後台的架構以彈性、可擴展性與安全性為核心理念：\n- **動態路由系統**：依據權限生成路由\n- **RBAC（基於角色的存取控制）**：與後端授權系統對應\n- **響應式設計**：適用於多種螢幕尺寸\n- **主題切換**：支援淺色與深色模式\n\n---\n\n## 系統整合與設計\n\nTheHope Conference 解決方案採用 **前後端分離** 模式。前端 SPA 透過 **RESTful API** 與後端服務互動，並整合 **Firebase 身份驗證** 與強健的 **RBAC 權限管理**。兩者協同運作，構建出一個完整、安全且現代化的會議管理生態系統，兼顧效能、易用性與可擴展性。\n\n---\n\nTheHope Conference 管理後台展現了一個最先進的前端實作，融合現代框架、高效開發體驗與企業級系統架構。它是一個專為高效能活動管理而打造的強大後台介面。"
+      }
     }
+  },
+  "notification": {
+    "copySuccess": "{{text}} 已複製到剪貼簿！"
+  },
+  "resume": {
+    "path": "Jay Hsia's Resume(zh-tw).pdf#zoom=110"
   }
 }
