@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               <img
                 src={images[current]}
                 alt={project.title}
-                className="w-full h-52 object-contain hover:transform hover:scale-105 transition-transform duration-300"
+                className="w-full h-44 sm:h-52 object-contain hover:transform hover:scale-105 transition-transform duration-300"
               />
             </div>
             {images.length > 1 && (
@@ -86,6 +86,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <div className="flex justify-end p-5 pt-0">
         <Link
           to={`/projects#${toSlug(project.title)}`}
+          state={{ fromHomePreview: true }}
           className="inline-flex items-center px-3 py-2 rounded-md bg-primary-500 text-white hover:bg-tertiary-500 dark:bg-primary-500 dark:hover:bg-tertiary-300 transition-colors"
         >
           {t("detail", { defaultValue: "Detail" })}

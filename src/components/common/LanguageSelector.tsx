@@ -57,7 +57,7 @@ const LanguageSelector: React.FC = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-primary-100 dark:bg-primary-800 border border-primary-300">
+        <div className="absolute left-0 md:left-auto md:right-0 mt-2 w-56 max-w-[calc(100vw-2rem)] rounded-md shadow-lg z-99 bg-primary-100 dark:bg-primary-800 border border-primary-300 dark:border-primary-600">
           <div className="py-1" role="menu" aria-orientation="vertical">
             {languages.map((language) => (
               <button

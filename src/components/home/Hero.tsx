@@ -21,13 +21,19 @@ const Hero: React.FC = () => {
 
   return (
     <>
-      <div className="w-full py-24 bg-primary-200 dark:bg-primary-800 text-primary-800 dark:text-primary-200">
-        <div className="max-w-6xl mx-auto px-6 flex flex-row items-center gap-8">
-          <section className="flex-1">
-            <p className="text-6xl font-bold tracking-wider">{t("home.hero.greeting")}</p>
-            <p className="mt-4 text-3xl text-primary-700 capitalize tracking-wide">{t("home.hero.position")}</p>
-            <p className="mt-2 text-lg text-primary-700 capitalize tracking-wide">{t("home.hero.slogan")}</p>
-            <div className="flex gap-x-4 mt-4">
+      <div className="w-full py-16 sm:py-20 md:py-24 bg-primary-200 dark:bg-primary-800 text-primary-800 dark:text-primary-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center md:items-stretch gap-8">
+          <section className="flex-1 text-center md:text-left">
+            <p className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-wider leading-tight">
+              {t("home.hero.greeting")}
+            </p>
+            <p className="mt-3 sm:mt-4 text-2xl sm:text-3xl text-primary-700 capitalize tracking-wide">
+              {t("home.hero.position")}
+            </p>
+            <p className="mt-2 text-base sm:text-lg text-primary-700 capitalize tracking-wide">
+              {t("home.hero.slogan")}
+            </p>
+            <div className="flex justify-center md:justify-start gap-x-4 mt-4">
               {HeroSocialItems.map((item: HeroSocialItem) => {
                 switch (item.itemType) {
                   case ItemType.Link:
@@ -80,8 +86,8 @@ const Hero: React.FC = () => {
               })}
             </div>
           </section>
-          <section className="flex-1 justify-items-center">
-            <img src={jay} className="h-80 lg:h-96 rounded-full shadow-xl"/>
+          <section className="flex-1 grid place-items-center">
+            <img src={jay} className="h-56 sm:h-72 md:h-80 lg:h-96 rounded-full shadow-xl" />
           </section>
         </div>
       </div>

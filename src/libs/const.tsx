@@ -221,7 +221,7 @@ const ProjectCardItems: ProjectCardItem[] = [
   {
     title: "Personal Website",
     summary: "summaries.personalWebsite",
-    images: ["/images/PersonalWebsite/1.png"],
+    images: ["/images/PersonalWebsite/1.png", "/images/PersonalWebsite/2.png", "/images/PersonalWebsite/3.gif"],
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
   },
   {
@@ -243,13 +243,14 @@ interface ProjectItem {
   content: string;
   images?: string[];
   tags?: string[];
+  link?: string;
 }
 
 const ProjectItems: ProjectItem[] = [
   {
     title: "Personal Website",
     content: "items.personalWebsite.content",
-    images: ["/images/PersonalWebsite/1.png"],
+    images: ["/images/PersonalWebsite/1.png", "/images/PersonalWebsite/2.png", "/images/PersonalWebsite/3.gif"],
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
   },
   {
@@ -257,6 +258,7 @@ const ProjectItems: ProjectItem[] = [
     content: "items.theHopeConferenceApp.content",
     images: ["/images/TheHopeConference/1.png", "/images/TheHopeConference/2.png", "/images/TheHopeConference/3.png"],
     tags: ["FastAPI", "Python", "PostgreSQL", "Redis", "AWS S3", "Docker", "CI/CD", "Firebase"],
+    link: "https://apps.apple.com/tw/app/the-hope-conference/id6739480959"
   },
   {
     title: "TheHope Conference Admin Portal",
