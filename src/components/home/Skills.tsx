@@ -43,7 +43,7 @@ const Skills: React.FC = () => {
   }, [pages.length, isPaused]);
 
   return (
-    <div className="w-full py-16 sm:py-20 md:py-24 bg-primary-100 dark:bg-primary-700 text-primary-800 dark:text-primary-200">
+    <div className="w-full py-16 sm:py-20 md:py-24 bg-primary-200 dark:bg-primary-800 text-primary-800 dark:text-primary-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="relative group h-[640px] sm:h-[600px] md:h-[520px]" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
           <div className="overflow-hidden">

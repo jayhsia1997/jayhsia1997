@@ -9,8 +9,8 @@ const Home: React.FC = () => {
   return (
     <>
       <Hero />
-      <Skills />
       <ProjectPreview />
+      <Skills />
       <About />
       <BackToTopButton />
     </>
