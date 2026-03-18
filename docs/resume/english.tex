@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 \usepackage{helvet}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -9,13 +9,13 @@
 \usepackage{fontawesome5}
 \usepackage{ifthen}
 \usepackage{setspace}
-\linespread{0.9}
+\linespread{0.7}
 \definecolor{primaryColor}{RGB}{0, 79, 144}
 \usepackage[colorlinks=true, urlcolor=primaryColor]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[margin=0.5in, includefoot]{geometry}
 \usepackage{fontspec}
-\setmainfont{Arial}
+\setmainfont{Calibri}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot{}
@@ -50,7 +50,7 @@
 % Resume Item No Horizontal Padding
 \newcommand{\resumeItemNH}[1]{
   \item\small{
-    {#1 \vspace{0pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
@@ -152,24 +152,19 @@
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-% Education
-\section*{Education}
-  \resumeSubHeadingListStart
-    % Seneca Polytechnic
-    \resumeSubheading
-      {Seneca Polytechnic}{Toronto, ON}
-      {Advanced Diploma in \textbf{Computer Programming \& Analysis}}{Jan 2025 -- Sep 2027}
-    % Lunghwa University of Science and Technology
-    \resumeSubheading
-      {Lunghwa University of Science and Technology}{Taoyuan City, Taiwan}
-      {B.S. in \textbf{Electrical Engineering}}{Sep 2015 -- Jun 2019}
-  \resumeSubHeadingListEnd
-
 % Projects
 \section*{Projects}
   \resumeSubHeadingListStart
+    % Facility Booking System
+    \resumeProjectHeading{Facility Booking System}{Project Lead (Volunteer)}{March 2026 -- Present}
+      \resumeProjectTechnologiesItem{Python, FastAPI, React.js, Tailwind CSS, PostgreSQL, Azure, Docker, CI/CD}
+      \resumeItemListStart
+        \resumeItemNH{Leading system design and core backend development for a Facility Booking Web app, defining the architecture, data model, and key REST APIs, and integrating Microsoft Entra ID for authentication.}
+        \resumeItemNH{Building an admin CMS to allow administrators to manage church information and facilities, and iterating on the initial booking workflows as the project progresses.}
+        \resumeItemNH{Coordinating a small team to deliver the MVP through planning, task allocation, and code reviews; currently under active development and iteration.}
+      \resumeItemListEnd
     % The Hope Conference App
-    \resumeProjectHeading{The Hope Conference App}{Backend Development(Volunteer)}{Aug 2024 -- Present}
+    \resumeProjectHeading{The Hope Conference App}{Backend Development (Volunteer)}{Aug 2024 -- Present}
       \resumeProjectTechnologiesItem{Python, FastAPI, Vite, React.js, Tailwind CSS, PostgreSQL, Redis, AWS S3, Docker, CI/CD, Firebase}
       \resumeItemListStart
         \resumeItemNH{Developed a backend system for a Conference App using FastAPI, integrating Third Party Authentication for user login, and designed APIs for frontend usage.}
@@ -183,4 +178,18 @@
         \resumeItemNH{Developed a personal website using React.js and TypeScript, and deployed it on Firebase Hosting.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
+
+  % Education
+\section*{Education}
+  \resumeSubHeadingListStart
+    % Seneca Polytechnic
+    \resumeSubheading
+      {Seneca Polytechnic}{Toronto, ON}
+      {Advanced Diploma in \textbf{Computer Programming \& Analysis}}{Jan 2025 -- Sep 2027}
+    % Lunghwa University of Science and Technology
+    \resumeSubheading
+      {Lunghwa University of Science and Technology}{Taoyuan City, Taiwan}
+      {B.S. in \textbf{Electrical Engineering}}{Sep 2015 -- Jun 2019}
+  \resumeSubHeadingListEnd
+
 \end{document}
